@@ -6,7 +6,7 @@ export default function UserInfo() {
   const { isLoggedIn, userState } = useUser();
   return isLoggedIn() ? (
     <div>
-      You're on the user info page and your email is <b>{userState.email}</b>.
+      Welcome to the Quired.FM info page and your email is <b>{userState.email}</b>.
       If you see this, that means you have succesfully logged in! Alternatively
       you can <Link to="/logout">sign out.</Link>
     </div>

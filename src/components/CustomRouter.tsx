@@ -17,7 +17,7 @@ export default function CustomRouter() {
 
   return (
     <Router>
-      {/* 👇 this is a ternary operator */}
+      {/* if the pages is loaded, log in, ir not logged in use switch statements */}
       {!loaded ? null : isLoggedIn() ? (
         <Switch>
           <Route path="/logout">
